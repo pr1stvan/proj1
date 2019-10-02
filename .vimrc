@@ -145,8 +145,10 @@ set expandtab
 " four characters wide.
 "set shiftwidth=4
 "set tabstop=4
-set clipboard=unnamedplus 
- 
+
+" Making the copy-paste work properly
+set clipboard=unnamedplus
+
 "------------------------------------------------------------
 " Mappings {{{1
 "
