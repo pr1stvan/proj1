@@ -1,0 +1,25 @@
+[user]
+	name = Rego Papcsak
+	email = papcsak.rego@outlook.com
+[alias]
+	st = status
+	lg = log --oneline --graph --all
+        c = "!git branch | grep \\* | cut -d ' ' -f2"
+        pc = "!git push origin HEAD:refs/for/`git c`"
+	co = checkout
+	br = branch
+        rs = reset
+[diff]
+        tool = meld
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	hooksPath = /home/pr1stvan/.githooks
+	editor = vim
+[pull]
+	ff = only
+[init]
+	defaultBranch = main
